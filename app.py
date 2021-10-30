@@ -1,9 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Sun Oct 31 00:02:16 2021
-
-@author: Shreyas
-"""
 
 from flask import Flask,render_template,url_for,request
 import pandas as pd 
@@ -11,7 +6,7 @@ import pandas as pd
 import pickle
 
 # load the model from disk
-loaded_model=pickle.load(open('random_forest_regression_model.pkl', 'rb'))
+loaded_model=pickle.load(open('xgbregressor.pkl','rb'))
 app = Flask(__name__)
 
 @app.route('/')

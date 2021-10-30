@@ -1,13 +1,17 @@
 body{
 	font:15px/1.5 Arial, Helvetica,sans-serif;
 	padding: 0px;
-	background-color:#f4f3f3;
+	background: rgb(187,48,214);
+	background: linear-gradient(90deg, rgba(187,48,214,1) 0%, rgba(79,79,213,1) 100%);
 }
 
 .container{
 	width:100%;
 	margin: auto;
 	overflow: hidden;
+	text-align: center;
+	background: rgb(187,48,214);
+	background: linear-gradient(90deg, rgba(187,48,214,1) 0%, rgba(79,79,213,1) 100%);
 }
 
 header{

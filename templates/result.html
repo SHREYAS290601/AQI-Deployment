@@ -4,24 +4,24 @@
 	<title></title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
-<body>
-
+<body style="	background: rgb(187,48,214);
+background: linear-gradient(90deg, rgba(187,48,214,1) 0%, rgba(79,79,213,1) 100%);">
 	<header>
 		<div class="container">
-		<div id="brandname">
+		<div id="brandname" style="text-align: center;">
 			Air Quality Index Prediction
 		</div>
-		<h2>Air Quality Index Prediction</h2>
+		<h1 style="text-align:center;font-family:Arial;letter-spacing:3.5px;color:#fff">Air Quality Prediction</h1>
 		
 	</div>
 	</header>
-	<p style="color:blue;font-size:20;text-align: center;"><b>Results for Comment</b></p>
+	<p style="color:rgb(255, 255, 255);font-size:20;text-align: center;"><b>Results for Comment</b></p>
 	<div class="results">
 
-	<h2 style="color:blue;">Air Quality Index Output</h2>
+	<h2 style="color:rgb(253, 253, 255);">Air Quality Index Output</h2>
 	 <table>
          <tbody>
-         <th>Air Quailty Index</th>
+         <th style="text-align: center;">Air Quailty Index</th>
          {# here we iterate over every item in our list#}
          {% for item in prediction %}
              <tr><td>{{ item }}</td></tr>
